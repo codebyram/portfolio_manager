@@ -1,0 +1,84 @@
+.portfolio-wrap {
+  border: 1px solid $color-border;
+  padding: 0;
+  margin: $space-small auto;
+
+  &.add {
+    min-height: 100%;
+    border-color: $color-primary-light;
+    cursor: pointer;
+
+    h1 {
+      font-size: 8rem;
+      color: $color-primary-light;
+    }
+    
+  }
+
+  .banner {
+    position: relative;
+    height: 200px;
+    padding: 0;
+
+    background: $color-primary;
+
+    .title-bar {
+      color: $color-white;
+      font-size: $font-size-medium;
+      font-weight: $font-weight-bold;
+
+      i {margin-left: $space-small;}
+    }
+
+    .detail-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      padding: $space-one 0;
+
+      background: $color-black-translucent;
+      color: $color-white;
+
+      .line {
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 0px;
+
+          width: 80%;
+          height: 1px;
+          
+          background: $color-white;
+        }
+      }
+    }
+
+  }
+
+  .data-row {
+    padding: $space-one 0;
+    border-bottom: 1px solid $color-border;
+
+    .data-title {
+      color: $color-silver;
+      font-weight: $font-weight-normal;
+    }
+    .data-value {
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  .button {
+    float: left;
+
+    margin: 0;
+    border-radius: 0;
+    padding: $space-small 0;
+    text-align: center;
+  }
+}

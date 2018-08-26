@@ -1,0 +1,22 @@
+.spinner {
+  width: 100%;
+  height: $form-input-height;
+  padding: 0 $space-slab;
+
+  .spinner-controls {
+    position: relative;
+    // margin: 0 auto;
+
+    input.spinner-value {
+      width: 36px;
+      margin: 0 .8rem;
+
+      padding: 0 $space-smaller;
+      border: 1px solid $color-border;
+      border-radius: 6px;
+
+      line-height: 32px;
+      text-align: center;
+    }
+  }
+}

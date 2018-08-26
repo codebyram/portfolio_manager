@@ -1,0 +1,80 @@
+.button {
+  @extend .btn;
+  @include buttonColorMixin($color-primary);
+  padding: $space-small $space-normal;
+  border-radius: 3px;
+  
+  color: $color-white;
+  font-size: $font-size-default;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white;
+  }
+  &.medium {
+    padding: $space-smaller $space-medium;
+    font-size: $font-size-small !important;
+    text-transform: capitalize;
+  }
+  &.button--secondary {
+    @include buttonColorMixin($color-secondary);
+  }
+  &.button--default {
+    @include buttonColorMixin($color-black);
+  }
+  &.button--success {
+    @include buttonColorMixin($color-success);
+  }
+
+  &.button--warning {
+    @include buttonColorMixin($color-warning);
+  }
+
+  &.button--danger {
+    @include buttonColorMixin($color-danger);
+  }
+
+  &.is-rounded {
+    border-radius: 50px;
+  }
+}
+
+span.rnd-btn {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid $color-border;
+  border-radius: 16px;
+
+  line-height: 32px;
+  text-align: center;
+  font-weight: $font-weight-bold;
+
+  cursor: pointer;
+  transition: all .1s linear;
+
+  &.rnd-btn-primary {
+    border-color: $color-primary;
+    color: $color-primary;
+    &:hover {
+      background: $color-primary;
+      color: $color-white;
+    }
+  }
+  &.rnd-btn-secondary {
+    border-color: $color-secondary;
+    color: $color-secondary;
+    &:hover {
+      background: $color-secondary;
+      color: $color-white;
+    }
+  }
+
+  &:hover {
+    @include boxShadowMixin();
+  }
+}

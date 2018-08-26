@@ -1,0 +1,69 @@
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+// font colors
+$color-heading: #2C3643;
+$color-body: #47525D;
+$color-silver: #67747C;
+$color-grey: #9B9D9E;
+
+// brand colors
+$color-primary: #20314d;
+$color-primary-light: #022b64;
+$color-secondary: #ac3b3f;
+$color-secondary-semi: #8dbeeb;
+
+// shadow
+$color-shadow: lighten($color-heading, 50%);
+
+// border colors
+$color-border: #dee4e6;
+$color-border-light: #f0f4f5;
+$color-border-input: #b0b8bd;
+
+// special colors
+$color-danger: #e03e3e;
+$color-warning: #eaa916;
+$color-success: #1bb165;
+
+// translucent colors
+$color-black-translucent: rgba(0,0,0,.3);
+$color-white-translucent: rgba(255,255,255,.3);
+
+/*
+*     Font clasees
+*/
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-white {
+  color: $color-white;
+}
+.color-black {
+  color: $color-black;
+}
+.color-secondary {
+  color: $color-secondary !important;
+}
+
+.color-heading {
+  color: $color-heading;
+}
+.color-body {
+  color: $color-body;
+}
+.color-silver {
+  color: $color-silver;
+}
+
+.color-danger {
+  color: $color-danger;
+}
+.color-warning {
+  color: $color-warning;
+}
+.color-success {
+  color: $color-success;
+}

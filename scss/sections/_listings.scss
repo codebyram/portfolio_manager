@@ -1,0 +1,30 @@
+.listing-title {
+  padding: $space-medium $space-normal;
+  margin: $space-normal auto;
+
+  h2 {text-transform: uppercase;}
+}
+
+.listing-container {
+  margin-top: $space-normal;
+
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    li {
+      @extend .col-lg-4;
+      @extend .col-md-6;
+      @extend .col-12;
+    }
+  }
+}

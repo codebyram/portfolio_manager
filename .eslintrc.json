@@ -1,0 +1,13 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "react/prefer-stateless-function": [2, { "ignorePureComponents": true }],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "no-useless-escape": "off",
+        "no-self-compare": "off",
+        "no-plusplus": "off",
+        "max-len": "off",
+        "new-cap": "off",
+        "camelcase": "off"
+    }
+}

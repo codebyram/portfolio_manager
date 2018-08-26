@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 6000;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: $header-height;
+  margin: 0;
+  padding: 0;
+
+  @include boxShadowMixin();
+
+  background: $color-white;
+
+  .container {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  a.logo-box {
+    display: block;
+    position: relative;
+    float: left;
+
+    height: 100%;
+    margin: 0;
+    padding: 0 $space-normal;
+    line-height: $header-height;
+
+    font-size: $font-size-big;
+    font-weight: $font-weight-black;
+    letter-spacing: 1.5;
+    text-transform: uppercase;
+    color: $color-primary;
+    text-decoration: none;
+
+    img {
+      height: 2.4rem;
+      margin: 1.2rem 0;
+    }
+  }
+
+  ul.menu {
+    display: flex;
+    position: relative;
+    float: right;
+
+    height: 100%;
+    margin: 0;
+    padding: 0 $space-normal;
+
+    list-style: none;
+
+    li.nav-item {
+      height: 100%;
+      padding: 0 $space-one;
+
+      a {
+        font-size: $font-size-default;
+        font-weight: $font-weight-bold;
+        line-height: $header-height;
+        color: $color-primary;
+        text-decoration: none;
+      }
+      a:hover {
+        color: darken($color-primary, 5%);
+      }
+    }
+  }
+}

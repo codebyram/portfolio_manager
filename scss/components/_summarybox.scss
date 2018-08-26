@@ -1,0 +1,142 @@
+.summary-box {
+  margin: $space-normal auto;
+  padding: 0;
+  
+  background: linear-gradient(to right, $color-primary , $color-primary-light);
+
+  .summary-content {
+    padding: $space-normal $space-large;
+
+    h1 {
+      color: $color-white;
+      font-weight: $font-weight-normal;
+      text-transform: uppercase;
+    }
+  
+    .investment-box,
+    .chart-box {
+      margin: $space-small 0;
+      padding: $space-normal $space-large;
+    }
+  }
+
+  .summary-footer {
+    padding: $space-normal $space-large;
+    border-top: 1px solid $color-white-translucent;
+
+    text-align: center;
+
+    h3 {
+      color: $color-white;
+
+      span.notifier {
+        position: relative;
+        display: inline-block;
+
+        margin-right: $space-normal;
+        
+        font-size: $font-size-large;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          right: -5px;
+
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
+
+          background: $color-danger;
+        }
+      }
+
+      a.button {
+        margin-left: $space-normal;
+      }
+    }
+  }
+}
+
+.investment-box {
+  height: 100px;
+
+  background: $color-black-translucent;
+
+  .value-box {
+    min-height: 100%;
+    
+    text-align: center;
+
+    cursor: pointer;
+
+    &:hover {
+      p.value { color: $color-white; }
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-size: $font-size-default;
+      font-weight: $font-weight-light;
+      color: $color-white-translucent;
+    }
+    p.value {
+      color: $color-success;
+      font-size: $font-size-mini;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      line-height: $space-normal;
+
+      transition: all .2s linear;
+
+      i.icon {
+        margin: $space-micro;
+        
+        font-size: $font-size-default !important;
+      }
+    }
+  }
+}
+
+.chart-box {
+  .chart-wrap {
+    position: relative;
+    float: left;
+
+    width: 170px;
+    height: 170px;
+    padding: $space-normal;
+  }
+}
+
+.detail-wrap {
+  width: 100%;
+  padding-left: $space-large;
+  .detail-row {
+    color: $color-white;
+    height: 24px;
+    line-height: 24px;
+    margin: $space-small 0;
+
+    .color-code {
+      display: block;
+      position: relative;
+      float: left;
+
+      width: 3px;
+      height: 24px;
+      margin-right: $space-normal;
+    }
+
+    .detail {
+      display: block;
+      position: relative;
+      float: left;
+
+      line-height: 24px;
+
+      strong {margin-left: $space-one;}
+    }
+  }
+}
